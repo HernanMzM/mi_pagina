@@ -1,0 +1,10 @@
+body { /* Estilos generales para toda la página */
+  font-family: Arial, sans-serif; /* Cambia la tipografía a Arial (y usa sans-serif si no está disponible) */
+  background-color: #f9f9f9; /* Color de fondo gris muy claro */
+  text-align: center; /* Centra todo el texto horizontalmente */
+  padding: 30px; /* Deja espacio interno (margen interior) alrededor del contenido */
+}
+
+h1 { /* Estilos solo para el título principal */
+  color: darkblue; /* Cambia el color del texto del h1 a azul oscuro */
+}
