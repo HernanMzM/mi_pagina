@@ -1,10 +1,76 @@
-body { /* Estilos generales para toda la página */
-  font-family: Arial, sans-serif; /* Cambia la tipografía a Arial (y usa sans-serif si no está disponible) */
-  background-color: #f9f9f9; /* Color de fondo gris muy claro */
-  text-align: center; /* Centra todo el texto horizontalmente */
-  padding: 30px; /* Deja espacio interno (margen interior) alrededor del contenido */
+/* General */
+body {
+  margin: 0; /* Quita el margen por defecto del navegador alrededor de la página */
+  font-family: Arial, sans-serif; /* Define la tipografía principal para toda la página */
+  line-height: 1.6; /* Espacio vertical entre líneas de texto (mejora legibilidad) */
+  background-color: #f4f4f9; /* Color de fondo de toda la página */
+  color: #333; /* Color de texto predeterminado (gris oscuro) */
 }
 
-h1 { /* Estilos solo para el título principal */
-  color: darkblue; /* Cambia el color del texto del h1 a azul oscuro */
+/* Navbar */
+header {
+  background: #4e1111; /* Color de fondo del encabezado (azul oscuro) */
+  color: white; /* Color del texto dentro del header */
+  padding: 10px 20px; /* Espacio interno (arriba/abajo 10px, izquierda/derecha 20px) */
+}
+
+nav {
+  display: flex; /* Usa flexbox para organizar los elementos horizontalmente */
+  justify-content: space-between; /* Separa los elementos al inicio y fin del nav */
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+nav h1 {
+  margin: 0; /* Quita el margen por defecto del título dentro del nav */
+}
+
+nav ul {
+  list-style: none; /* Quita los puntos de la lista */
+  display: flex; /* Muestra los elementos de la lista en línea (horizontal) */
+  gap: 20px; /* Espacio de 20px entre cada elemento de la lista */
+}
+
+nav ul li a {
+  color: white; /* Color de los enlaces en la navbar */
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  font-weight: bold; /* Texto en negrita */
+}
+
+nav ul li a:hover {
+  text-decoration: underline; /* Subraya el enlace al pasar el mouse encima */
+}
+
+/* Hero */
+.hero {
+  text-align: center; /* Centra todo el texto dentro de la sección */
+  padding: 50px 20px; /* Espacio interno: arriba/abajo 50px, izquierda/derecha 20px */
+  background: linear-gradient(to right, #691717, #691717); /* Degradado de azul oscuro a azul claro */
+  color: white; /* Color del texto dentro de la sección */
+}
+
+.hero button {
+  margin-top: 15px; /* Separación arriba del botón */
+  padding: 10px 20px; /* Espacio interno dentro del botón */
+  background: white; /* Color de fondo del botón */
+  color: #000000; /* Color del texto del botón */
+  border: none; /* Quita el borde predeterminado */
+  border-radius: 5px; /* Bordes redondeados del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.hero button:hover {
+  background: #ddd; /* Cambia el fondo del botón al pasar el mouse */
+}
+
+/* Secciones */
+section {
+  padding: 40px 20px; /* Espacio interno de cada sección (arriba/abajo 40px, izquierda/derecha 20px) */
+}
+
+/* Footer */
+footer {
+  text-align: center; /* Centra el texto dentro del pie de página */
+  padding: 20px; /* Espacio interno del footer */
+  background: #4e1111; /* Color de fondo del footer (mismo azul que el header) */
+  color: white; /* Color del texto dentro del footer */
 }

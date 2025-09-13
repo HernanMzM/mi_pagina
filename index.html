@@ -1,16 +1,44 @@
-<!DOCTYPE html> <!-- Indica que el documento es HTML5 -->
-<html lang="es"> <!-- Abre el documento HTML y especifica el idioma (español) -->
-<head> <!-- Contiene configuraciones y enlaces de la página -->
-  <meta charset="UTF-8"> <!-- Permite usar caracteres especiales (ñ, tildes, etc.) -->
-  <title>Mi Pagina en VS Code</title> <!-- Título que aparece en la pestaña del navegador -->
-  <link rel="stylesheet" href="style.css"> <!-- Vincula el archivo CSS externo para estilos -->
+<!DOCTYPE html> <!-- Indica que este documento es HTML5 -->
+<html lang="es"> <!-- Comienza el documento HTML y define el idioma como español -->
+<head> <!-- Contiene configuraciones, metadatos y enlaces a estilos -->
+  <meta charset="UTF-8"> <!-- Permite caracteres especiales como ñ y tildes -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace la pagina responsiva en móviles -->
+  <title>Mi Pagina</title> <!-- Titulo que aparece en la pestaña del navegador -->
+  <link rel="stylesheet" href="style.css"> <!-- Vincula el archivo CSS externo que contiene los estilos -->
 </head>
-<body> <!-- Cuerpo visible de la página -->
+<body> <!-- Comienza el cuerpo visible de la página -->
 
-  <h1>Hola mundo desde VS Code</h1> <!-- Título principal en pantalla -->
-  <p>Esta es mi primera pagina web.</p> <!-- Párrafo de texto -->
-  <button onclick="saludar()">Haz clic aqui</button> <!-- Botón que ejecuta la función "saludar" -->
+  <header> <!-- Sección de encabezado, normalmente contiene la navegación -->
+    <nav> <!-- Barra de navegación -->
+      <h1>Bienvenido a mi pagina</h1> <!-- Título principal en la barra de navegación -->
+      <ul> <!-- Lista de enlaces de navegación -->
+        <li><a href="#inicio">Inicio</a></li> <!-- Enlace que va a la sección "inicio" -->
+        <li><a href="#sobre">Sobre mi</a></li> <!-- Enlace que va a la sección "sobre" -->
+        <li><a href="#contacto">Contacto</a></li> <!-- Enlace que va a la sección "contacto" -->
+      </ul>
+    </nav>
+  </header>
 
-  <script src="script.js"></script> <!-- Vincula el archivo JavaScript externo -->
+  <section id="inicio" class="hero"> <!-- Sección principal de bienvenida con id "inicio" y clase "hero" -->
+    <h2>Hola, soy Hernan</h2> <!-- Subtítulo de la sección -->
+    <p>Esta es mi primera pagina</p> <!-- Párrafo descriptivo -->
+    <button onclick="saludo()">Haz clic aqui</button> <!-- Botón que ejecuta la función "saludo()" al hacer clic -->
+  </section>
+
+  <section id="sobre"> <!-- Sección "Sobre mi" -->
+    <h2>Sobre mi</h2> <!-- Subtítulo -->
+    <p>Me gusta la programacion y estoy aprendiendo a crear paginas web.</p> <!-- Texto descriptivo -->
+  </section>
+
+  <section id="contacto"> <!-- Sección "Contacto" -->
+    <h2>Contacto</h2> <!-- Subtítulo -->
+    <p>Puedes escribirme a <a href="mailto:hernanmum3@gmail.com">hernanmum3@gmail.com</a></p> <!-- Enlace de correo electrónico -->
+  </section>
+
+  <footer> <!-- Pie de página -->
+    <p>© 2025 Mi Pagina </p> <!-- Mensaje de derechos de autor -->
+  </footer>
+
+  <script src="script.js"></script> <!-- Vincula el archivo JS externo que contiene la funcionalidad interactiva -->
 </body>
 </html> <!-- Cierra el documento HTML -->

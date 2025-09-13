@@ -1,3 +1,5 @@
-function saludar() { // Define una función llamada "saludar"
-  alert("Hola! Bienvenido a mi pagina creada en VS Code"); // Muestra un mensaje emergente al usuario
+// Funcion que muestra un mensaje cuando se presiona el boton
+function saludo() { 
+  // alert muestra un cuadro de diálogo con un mensaje en el navegador
+  alert("Gracias por visitar mi pagina"); 
 }
